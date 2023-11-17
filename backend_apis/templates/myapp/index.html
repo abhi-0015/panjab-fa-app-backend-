@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPanjabFA</title>
+</head>
+
+<body>
+    <center>
+        <form name="register" method="post" action="../insertuser/">
+            {% csrf_token %}
+
+        <h1>Enter a User</h1>
+            <pre>
+
+                <label for="name">User Id</label>
+                <input type="text" name="uid" required>
+
+                <label for="name">Full Name:</label>
+                <input type="text" name="uname" required>
+  
+                <label for="email">Email:</label>
+                <input type="email" name="uemail" required> <!-- This field is required -->
+
+                <label for="name">Your Country Region</label>
+                <input type="text" name="ucountry" required>
+
+                <label for="name">Your Referral code*</label (optional)>
+                <input type="text" name="ucode" >
+  
+           
+            
+                <input type="submit" value="Click to Register" width="300" height="100">
+            </pre>
+           
+        </form>
+
+    </center>
+</body>
+
+</html>
